@@ -6,4 +6,8 @@
     <RootNamespace>_3.TakeSkipRope</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="C:\Users\kristiyana.za\source\repos\ListMoreeXERCISE.cs" Link="ListMoreeXERCISE.cs" />
+  </ItemGroup>
+
 </Project>
