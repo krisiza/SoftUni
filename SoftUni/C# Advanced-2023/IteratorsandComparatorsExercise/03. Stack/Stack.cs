@@ -10,6 +10,9 @@ namespace ListyIterator
     internal class Stack<T> : IEnumerable<T>
     {
         private List<T> CustomStack = new();
+
+        private int index = 0;
+
         public IEnumerator<T> GetEnumerator()
         {
             if (CustomStack.Any())
