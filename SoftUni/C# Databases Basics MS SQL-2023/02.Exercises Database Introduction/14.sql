@@ -1,0 +1,86 @@
+CREATE DATABASE [CarRental]
+
+USE [CarRental]
+
+CREATE TABLE [Categories](
+ID INT PRIMARY KEY IDENTITY,
+CategoryName NVARCHAR(70) NOT NULL,
+DailyRate DECIMAl,
+WeeklyRate DECIMAL,
+MonthlyRate DECIMAL,
+WeekendRate DECIMAL)
+
+CREATE TABLE [Cars](
+ID INT PRIMARY KEY IDENTITY,
+PlateNumber VARCHAR(70) NOT NULL,
+Manufacturer VARCHAR(70) NOT NULL,
+Model VARCHAR(70) NOT NULL,
+CarYear DATE NOT NULL,
+CategoryId INT FOREIGN KEY (CategoryId) REFERENCES Categories([Id]),
+Doors INT,
+Picture IMAGE,
+Condition VARCHAR(70),
+Available BIT)
+
+CREATE TABLE [Employees](
+ID INT PRIMARY KEY IDENTITY,
+FirstName VARCHAR(70) NOT NULL,
+LastName VARCHAR(70) NOT NULL,
+Title VARCHAR(70),
+Notes DECIMAL)
+
+CREATE TABLE [Customers](
+ID INT PRIMARY KEY IDENTITY,
+DriverLicenceNumber VARCHAR(70) NOT NULL,
+FullName VARCHAR(70) NOT NULL,
+[Address] VARCHAR(70),
+City VARCHAR(70),
+ZIPCode INT,
+Notes DECIMAL)
+
+CREATE TABLE [RentalOrders](
+ID INT PRIMARY KEY IDENTITY,
+EmployeeId INT FOREIGN KEY (EmployeeId) REFERENCES Employees (Id),
+CustomerId INT FOREIGN KEY (CustomerId) REFERENCES Customers (Id),
+CarId INT FOREIGN KEY (CarId) REFERENCES Cars (Id),
+TankLevel DECIMAl,
+KilometrageStart DECIMAL,
+KilometrageEnd DECIMAL,
+TotalKilometrage DECIMAL,
+StartDate DATE,
+EndDate DATE,
+TotalDays INT,
+RateApplied DECIMAL,
+TaxRate DECIMAl,
+OrderStatus NVARCHAR(50),
+Notes DECIMAL)
+
+INSERT INTO [Categories]
+VALUES
+('CategoryName1', NULL,NULL,NULL,NULL),
+('CategoryName2', NULL,NULL,NULL,NULL),
+('CategoryName3', NULL,NULL,NULL,NULL)
+
+INSERT INTO [Cars]
+VALUES
+('123', 'az', 'bmw','2006/01/01',1,4,NULL,NULL,1),
+('193', 'ti', 'bmw','2020/01/05',2,4,NULL,NULL,0),
+('153', 'toi', 'bmw','2021/01/12',3,4,NULL,NULL,0)
+
+INSERT INTO [Employees]
+VALUES
+('FirstName1', 'LastName1',NULL,NULL),
+('FirstName2', 'LastName3',NULL,NULL),
+('FirstName3', 'LastName4',NULL,NULL)
+
+INSERT INTO [Customers]
+VALUES
+('1234', 'FullName1',NULL,NULL, NULL,NULL),
+('1235', 'FullName2',NULL,NULL, NULL,NULL),
+('1236', 'FullName3',NULL,NULL, NULL,NULL)
+
+INSERT INTO [RentalOrders]
+VALUES
+(1, 1, 1, NULL, 156000, NULL, 156000, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(2, 2, 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(3, 3, 3, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
