@@ -1,0 +1,27 @@
+.section-with-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    padding: 5em 5em;
+}
+
+.section-with-button h2{
+    color: #5F5F5F;
+}
+
+.section-with-button p{
+    color: #CEC5BC;
+}
+
+.section-with-button a{
+    color: white;
+    background-color: #974D1B;
+    margin-top: 2em;
+    padding: 1em 2em;
+    letter-spacing: 4px;
+}
+
+.section-with-button a:hover{
+    background-color: #d2b6a3;
+}

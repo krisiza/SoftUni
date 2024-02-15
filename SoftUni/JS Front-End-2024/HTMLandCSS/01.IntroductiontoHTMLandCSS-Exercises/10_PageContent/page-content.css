@@ -1,0 +1,20 @@
+header p
+{
+    size: 28px;
+    font-style: italic;
+}
+
+p
+{
+    size: 24px;
+}
+
+body
+{
+    background-color: #CCCCCC;
+}
+
+section
+{
+    margin-left: 20px;
+}

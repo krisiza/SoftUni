@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 3em;
+}
+
+header{
+    display: flex;
+    margin: 2em 1em;
+    justify-content: space-between;
+}
+
+main{
+    margin-top: 2em;
+}
+
+main > *{
+    margin: 1em 0;
+}
+
+hr{
+    border: 2px solid black;
+}
+
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav{
+    text-decoration: none;
+}
+
+li{
+    display: inline;
+    margin: 4px 8px;
+}
+
+a{
+    text-decoration: none;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}

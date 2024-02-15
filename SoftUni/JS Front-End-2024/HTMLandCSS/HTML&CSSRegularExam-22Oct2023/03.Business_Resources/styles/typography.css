@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+.header h1{
+    font-family: 'PT Serif', sans-serif; 
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.header p{
+    font-family: 'PT Sans', sans-serif; 
+    font-size: 0.8em;
+}
+
+nav{
+    font-family: 'PT Sans', sans-serif; 
+    font-size: 0.7em;
+    font-weight: 100;
+}
+
+.container-card h2{
+    font-family: 'PT Serif', sans-serif; 
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.container-card p{
+    font-family: 'PT Sans', sans-serif; 
+    font-size: 0.6em;
+    font-weight: 100;
+}
+
+.container-card a{
+    font-family: 'PT Sans', sans-serif; 
+    font-size: 0.6em;
+    font-weight: 600;
+}

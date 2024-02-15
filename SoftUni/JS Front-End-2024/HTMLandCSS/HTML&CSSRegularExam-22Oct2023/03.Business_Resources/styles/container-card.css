@@ -1,0 +1,22 @@
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em;
+    padding: 5em;
+    justify-content: center;
+}
+
+.container-card .card{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 40%;
+}
+
+.card .button{
+    border: 2px solid #c7ad97;
+    text-decoration: none;
+    color: #a88668;
+    width: fit-content;
+    padding: 0.5em 1em;
+}

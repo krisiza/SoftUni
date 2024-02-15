@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(238, 238, 238);
+    width: 100vh;
+}
+
+.card
+{
+    background-color: #fff;
+    width: 25em;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10em auto;
+    box-shadow: 10px 5px 5px rgb(79, 79, 79);
+}
+
+button
+{
+    padding: 5px;
+    color: #fff;
+    background-color: green;
+    border-radius: 0.3em;
+    position: absolute;
+    left: 23em;
+}
+
+h3
+{
+   padding: 1em 2em;
+}
+
+p{
+    padding: 0 2em;
+}
+
+img
+{
+    width: 100%;
+    display: inline-block;
+    height: auto;
+}
+
+@media (max-width:600px)
+{
+    .card
+    {
+        background-color: #fff;
+        width: 15em;
+        height: 20em;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 10em auto;
+        box-shadow: 10px 5px 5px rgb(79, 79, 79);
+    }
+
+    button
+{
+    padding: 2px;
+    color: #fff;
+    background-color: green;
+    border-radius: 0.3em;
+    position: absolute;
+    left: 12em;
+    bottom: 1em;
+}
+}
+

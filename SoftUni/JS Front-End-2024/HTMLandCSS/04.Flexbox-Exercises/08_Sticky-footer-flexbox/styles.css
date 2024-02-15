@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(238,238,238);
+    display: flex;
+    height: 100vh;
+    font-family: Helvetica, sans-serif;
+    flex-direction: column;
+}
+
+head,main,footer
+{
+    margin: 2em 0;
+}
+
+p{
+    margin: 1em 0;
+}
+
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+hr{
+    border: 2px solid black;
+}
+
+footer{
+    background-color: rgb(102, 102, 102);
+    color: rgb(255, 255, 255);
+}

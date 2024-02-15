@@ -1,0 +1,60 @@
+body
+{
+    background-color: #CCCCCC;
+}
+
+ul
+{
+    background-color: #444;
+    text-align: center;
+    list-style: none;
+}
+
+li
+{
+    size: 24px;
+    line-height: 40px;
+    height: 40px;
+    padding: 20px;
+    display: inline-block;
+}
+
+a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header p
+{
+    size: 28px;
+    font-style: italic;
+}
+
+p
+{
+    size: 24px;
+}
+
+body
+{
+    background-color: #CCCCCC;
+}
+
+section
+{
+    margin-left: 20px;
+}
+
+footer
+{
+    height: 40px;
+    background-color: #444;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer p
+{
+    padding: 10px;
+}

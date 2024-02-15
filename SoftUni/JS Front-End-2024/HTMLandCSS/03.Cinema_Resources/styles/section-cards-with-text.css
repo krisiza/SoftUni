@@ -1,0 +1,22 @@
+
+.section-cards-with-text{
+    color: white;
+    background-color: #353434;
+    display: flex;
+    padding: 5em 3em;
+}
+
+
+.section-cards-with-text .card{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+
+.section-cards-with-text .card p{
+    text-align: center;
+    color: #4e4c4a;
+}
