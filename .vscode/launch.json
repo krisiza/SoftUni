@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\SoftUni\\Front-End-2024\\JS Front-End-2024\\04.JSArraysandStrings-Exercise\\8.Pascal-CaseSplitter.js"
+            "program": "${workspaceFolder}\\SoftUni\\Front-End-2024\\JS Front-End-2024\\05.FunctionsandStatements-Lab\\04.Orders.js"
         }
     ]
 }
