@@ -19,4 +19,4 @@ function solve(array){
     }
 }
 
-solve([1111]);
+solve([32,2,232,1010, 1111]);

@@ -14,16 +14,15 @@ function solve(password){
     ];
 
 
-    const erroes = validations
+    const errors = validations
         .map(([validator, message]) => validator(password) ? '' : message)
         .filter(message => !!message)
 
-    erroes.forEach(message => console.log(message));
+    errors.forEach(message => console.log(message));
 
-    if(erroes.length === 0){
+    if(errors.length === 0){
         console.log('Password is valid');
     }
-
 }
 
 solve('Pa$s$s')
