@@ -1,14 +1,12 @@
 function solve(input){
 
     for(let item of input){
-        const[town, latitudeStr, longitudeStr] = item.split(' | ');
+        const[townName, latitude, longitude] = item.split(' | ');
 
-        let latitude = Number(latitudeStr).toFixed(2)
-        let longitude = Number(longitudeStr).toFixed(2);
         let townObj = {
-            town,
-            latitude,
-            longitude
+            town: townName,
+            latitude: Number(latitude).toFixed(2),
+            longitude: Number(longitude).toFixed(2)
         }
 
         console.log(townObj);

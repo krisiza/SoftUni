@@ -1,64 +1,38 @@
 function solve(input){
-
-    class Movie{
-        constructor(name){
-            const pattern = new RegExp(',', 'g');
-            name = name.replace(pattern, ' ');
-            this.name = name;
-        }
-
-        name = null
-        date = null;
-        director = null;
-    }
-
-    let addMovie = (movieName, objList) =>{
-        if(!objList.find(x => x.name === movieName)){
-            objList.push(new Movie(movieName))
-        }
-    }
-
-    let addDirector = (movieName, directorName, objList) => {
-        var foundMovie =objList.find(x => x.name === movieName);
-        if(foundMovie){
-            foundMovie.director = directorName;
-        }
-    }
-
-    let onDate = (movieName, dateList, objList) => {
-        var foundMovie = objList.find(x => x.name === movieName);
-        if(foundMovie){
-            foundMovie.date = dateList;
-        }
-    }
-
     let movieList = [];
-    const pattern = new RegExp(',', 'g');
 
-    for(let element of input){
-        let line = element.split(' ');
+    for(let row of input){
 
-        if(line.find( x => x ==='addMovie')){
-            const[comand, ...rest] = element.split(' ');
-            addMovie(rest.toString(), movieList);
-        }else if(line.find( x => x ==='directedBy')){
-            let listdirector = line.toString().split('directedBy');
-            let m = listdirector[0].replace(pattern, ' ')
-                                    .trim();
-            let d = listdirector[1].replace(pattern, ' ')
-                            .trim();
-            addDirector(m, d, movieList);
-        }else if(line.find( x => x ==='onDate')){
-            let listdate = line.toString().split('onDate');
-            let m = listdate[0].replace(pattern, ' ')
-                                .trim();
-            let d = listdate[1].replace(pattern, ' ')
-                            .trim();
-            onDate(m, d, movieList);
+        const addMovieCommand = 'addMovie';
+        const directedByCommand = 'directedBy';
+        const onDateCommand = 'onDate';
+
+        if(row.includes(addMovieCommand)){
+            const movie = {
+                name: row.substring(addMovieCommand.length + 1)
+            }; 
+            movieList.push(movie);        
+        }else if(row.includes(directedByCommand)){
+            const [movieName, director] = row.split(` ${directedByCommand} `);
+            const movie = movieList.find(movie => movie.name === movieName);
+
+            if(movie){
+                movie.director = director;
+            }
+            
+        }else if(row.includes(onDateCommand)){
+            let [movieName, date] = row.split(` ${onDateCommand} `);
+            const movie = movieList.find(movie => movie.name === movieName);
+
+            if(movie){
+                movie.date = date;
+            }
         }
     }
 
-    console.log(JSON.stringify(movieList).replace('[', '').replace(']', ''));
+    movieList
+    .filter(movie => movie.director && movie.date)
+    .forEach(movie => console.log(JSON.stringify(movie)));
 }
 
 solve([
