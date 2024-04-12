@@ -6,7 +6,9 @@ const locationInputElement = document.getElementById('location');
 const temperatureInputElement = document.getElementById('temperature');
 const dateInputElement = document.getElementById('date');
 const addButtonElement = document.getElementById('add-weather');
-const editButtonElement = document.getElementById('edit-weather')
+const editButtonElement = document.getElementById('edit-weather');
+
+let currentId = null;
 
 async function loadData(){
     listElement.innerHTML = '';
@@ -24,6 +26,7 @@ async function loadData(){
         const deleteButtonElement = document.createElement('button');
         deleteButtonElement.textContent = 'Delete';
         deleteButtonElement.classList.add('delete-btn');
+        deleteButtonElement.addEventListener('click', deleteItem);
 
         const containerButtonsElement = document.createElement('div');
         containerButtonsElement.id = 'buttons-container';
@@ -49,6 +52,28 @@ async function loadData(){
         listElement.appendChild(containerItemElement);
 
         async function change(){
+            containerItemElement.remove();
+
+            locationInputElement.value = item.location;
+            temperatureInputElement.value = item.temperature;
+            dateInputElement.value = item.date;
+
+            currentId = item._id;
+
+            editButtonElement.disabled = false;
+            addButtonElement.disabled = true;
+        }
+
+        async function deleteItem(){
+
+            const response = await fetch(`${baseUrl}/${item._id}`, {
+                method: 'DELETE',
+            })
+        
+            if(!response.ok){
+                return;
+            }
+
             containerItemElement.remove();
         }
    }
@@ -80,3 +105,31 @@ addButtonElement.addEventListener('click', async() => {
     dateInputElement.value = '';
 })
 
+editButtonElement.addEventListener('click', async () => {
+    const response = await fetch(`${baseUrl}/${currentId}`, {
+        method: 'PUT',
+        headers: {
+            'content-type': 'application/json',
+        },
+        body: JSON.stringify({
+             _id: currentId,
+            location: locationInputElement.value,
+            temperature: temperatureInputElement.value,
+            date: dateInputElement.value,
+        })
+    })
+
+    if(!response.ok){
+        return;
+    }
+
+    loadData();
+
+    editButtonElement.disabled = true;
+    addButtonElement.disabled = false;
+    currentId = null;
+
+    locationInputElement.value = '';
+    temperatureInputElement.value = '';
+    dateInputElement.value = '';
+})

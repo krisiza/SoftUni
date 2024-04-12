@@ -112,7 +112,6 @@ function solve() {
 
     });
 
-    // Edit gift
    // Edit gift
     buttonEditGiftElement.addEventListener('click', async () => {
     try {
@@ -131,13 +130,18 @@ function solve() {
         if (!response.ok) {
             throw new Error('Failed to edit gift');
         }
+
         await updateGifts();
+
         inputGiftElement.value = '';
         inputForElement.value = '';
         inputPriceElement.value = '';
+
         currentid = null;
+
         buttonAddGiftElement.disabled = false;
         buttonEditGiftElement.disabled = true;
+
     } catch (error) {
         console.error(error);
     }
