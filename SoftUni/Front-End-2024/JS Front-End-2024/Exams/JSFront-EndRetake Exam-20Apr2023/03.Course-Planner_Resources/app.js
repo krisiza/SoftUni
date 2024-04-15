@@ -132,7 +132,7 @@ editBaseButtonElement.addEventListener('click', async(e) => {
         return;
     }
 
-    loadData();
+    await loadData();
 
     editBaseButtonElement.disabled = true;
     addButtonElement.disabled = false;
