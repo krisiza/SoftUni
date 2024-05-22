@@ -1,0 +1,13 @@
+body{
+    background-color: aqua;
+}
+
+p{
+    text-shadow: 0 0 5px #000;
+    text-indent: 5em;
+    width: 50vw;
+    background-color: beige;
+    height: 50vh;
+    overflow:scroll;
+    line-height: 3;
+}

@@ -2,7 +2,7 @@
 
 body
 {
-    font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial sans-serif;
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial sans-serif;
     padding: 4em;
 }
 
@@ -17,7 +17,7 @@ nav
 
 li
 {
-    list-style: none outside;
+    list-style: none;
     line-height: 25px;
     margin-left: -15px;
 }
@@ -35,10 +35,7 @@ i
 
 button
 {
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding: 4px 12px;
     line-height: 20px;
     color: #ffffff;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);

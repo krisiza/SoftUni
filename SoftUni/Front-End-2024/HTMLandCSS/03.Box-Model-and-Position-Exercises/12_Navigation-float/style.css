@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(238, 238, 238);
+    font-size: 1.4em;
+    padding: 2em;
+    max-width: 80em;
+    min-width: 1300px;
+    position: relative;
+    margin: 0 auto;
+}
+
+header{
+    margin-bottom: 1em;
+}
+
+main{
+    max-width: 70%;
+}
+
+hr{
+    border: 2px solid black;
+}
+
+.title{
+    font-size: 2.6em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav{
+    position: absolute;
+    top: 6em;
+    right: 2em;
+}
+
+header nav li{
+    display: inline;
+    padding: 0 1em;
+}
+
+a{
+    font-size: 1.5rem;
+    color: rgb(0, 102, 0) ;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+h1, h2{
+    margin: 2rem 0;
+}
+
+h3{
+    margin: 1rem 0;
+}
+
+p{
+    margin: 2rem 0;
+}
+
+.first-img-container{
+    display: inline-block;
+    background-color: rgb(255, 255, 255) ;
+    border: 3px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    float: right;
+    margin: 2em;
+}
+
+.second-img-container{
+    display: inline-block;
+    background-color: rgb(255, 255, 255) ;
+    border: 3px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    float: left;
+    margin:0 2em;
+}
+
+
+img{
+    padding: 0.5rem;
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+blockquote{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: gray;
+    max-width: 30%;
+    font-style: italic;
+    border-left: 4px solid gray;
+    padding-left: 2em;
+    position: relative;
+    float: right;
+    margin-left: 2em;
+}
+
+blockquote footer{
+    text-align: end;
+}
+
+aside{
+    position: absolute;
+    top: 10em;
+    right: 10em;
+}
+
+aside nav{
+    margin-left: 2em;
+}
+
+aside nav a{
+    color: rgb(89, 189, 104);;
+}
+

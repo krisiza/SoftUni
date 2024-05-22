@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background: rgb(58,85,180);
+    background: linear-gradient(90deg, rgba(58,85,180,1) 0%, rgba(29,134,253,1) 50%, rgba(69,235,252,1) 100%);  
+}
+
+.main-container{
+    margin: 0 auto;
+    width: 66em;
+}
+
+h1{
+    text-align: center;
+    padding: 1em;
+    border-bottom: 2px solid black;
+    font-family: "Jersey 10 Charted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    margin-bottom: 50em;
+}
+
+.buttons-conatiner{
+    background: rgb(240,241,122);
+    background: linear-gradient(90deg, rgba(240,241,122,1) 0%, rgba(253,206,29,1) 69%);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.em{
+    font-size: 1em;
+}
+
+.rem{
+    font-size: 1rem;
+}
+
+.em h3{
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.rem h3{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.description{
+    text-align: center;
+}
+
+.buttons-conatiner p{
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    color: #fff;
+    font-size: 4em;
+}
+
+.buttons-conatiner button{
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+    background-color: #000;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+}

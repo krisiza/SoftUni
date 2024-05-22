@@ -3,6 +3,14 @@ html
     font-family: Helvetica, sans-serif;
 }
 
+body{
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+h1{
+    margin-right: 3em;
+}
 
 h1,nav{
     display:inline-block;
@@ -11,11 +19,13 @@ h1,nav{
 li
 {
     display: inline-block;
+    width: 5em;
 }
 
 a
 {
     color: green;
+    text-decoration: none;
 }
 
 hr

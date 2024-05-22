@@ -8,6 +8,8 @@ body{
     padding: 2em;
     background-color: #eee;
     font-size: 12px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 p,ul{
@@ -96,9 +98,6 @@ blockquote.author{
     flex: 0 0 60%;
 }
 
-.site-aside{
-    flex: 1 0 auto;
-}
 
 @media (min-width: 500px){
     body{

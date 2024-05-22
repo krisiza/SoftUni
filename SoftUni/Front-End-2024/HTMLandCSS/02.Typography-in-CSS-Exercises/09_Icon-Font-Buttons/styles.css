@@ -1,14 +1,11 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
 
 body
 {
     font-family: Arial, serif;
     line-height: 3px;
     font-size: 18px;
-    padding-left: 27px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 27px;
+    padding: 27px, 12.6px;
 }
 
 a
@@ -19,6 +16,7 @@ a
     padding: 20px;
     margin: 20px;
 }
+
 
 i
 {

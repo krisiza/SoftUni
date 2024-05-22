@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kode Mono';
+}
+
+.main-container{
+    background-color: #24333C;
+    width: 650px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.content-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.buttons-container{
+    display: flex;
+    width: 90%;
+    margin-bottom: 2em;
+}
+
+.buttons-container > *{
+    margin: 0;
+    border: 0;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.buttons-container button:first-child{
+    color: #fff;
+}
+
+.buttons-container button:last-child{
+    color: #A0B3B0;
+    background-color: #435359;
+}
+
+.buttons-container button:last-child:hover{
+    background-color: #118565;
+    color: #fff;
+}
+
+button{
+    background-color: #1AB188;
+    padding: 1em 4em;
+}
+
+.input-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-container{
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.name-container > *{
+    width: 100%;
+}
+
+
+input{
+    border: 1px solid #A0B3B0;
+    background-color: #24333C;
+    height: 25px;
+}
+
+::placeholder{
+    color: #A0B3B0;
+    padding-left: 10px;
+    content: "*";
+}
+
+::placeholder::first-letter{
+    color: #24333C;
+
+}
+
+.email-password-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#btn-start{
+    margin-top: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 5px;
+    padding: 1rem 4rem;
+}

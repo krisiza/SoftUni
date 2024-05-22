@@ -6,7 +6,7 @@ body
 
 .gallery
 {
-    width: 100%;
+    max-width: 70%;
     margin: 0 auto;
     text-align: center;
 }
@@ -22,8 +22,7 @@ li
     margin: 0.5rem;
 }
 
-img
-{
+img{
     display: block;
     width: 100%;
     height: auto;

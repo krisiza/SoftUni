@@ -1,0 +1,43 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.viewport:first-child{
+    background: rgb(50,45,130);
+    background: linear-gradient(90deg, rgba(50,45,130,1) 0%, rgba(85,85,197,1) 35%, rgba(0,255,184,1) 100%);
+}
+
+.viewport:nth-child(2){
+    background: rgb(146,45,97);
+    background: linear-gradient(90deg, rgba(146,45,97,1) 0%, rgba(226,94,119,1) 35%, rgba(255,159,0,1) 100%);
+}
+
+.img-container{
+    max-width: 30%;
+    min-width: 350px;
+    padding: 5em;
+    margin: 0 auto;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+p{
+    position: absolute;
+    font-size: 1.5em;
+    bottom: 100px;
+    right: 100px;
+    color: #fff;
+}
+
+p:hover{
+    color: bisque;
+    cursor: pointer;
+}

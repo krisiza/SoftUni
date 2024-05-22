@@ -12,9 +12,14 @@ body{
     flex-direction: column;
 }
 
+header{
+    padding: 0 5em;
+}
+
 head,main,footer
 {
-    margin: 2em 0;
+    margin: 5em 0;
+    padding: 0 5em;
 }
 
 p{
@@ -36,4 +41,8 @@ hr{
 footer{
     background-color: rgb(102, 102, 102);
     color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: -80px;
+    left: 0;
+    width: 100%;
 }

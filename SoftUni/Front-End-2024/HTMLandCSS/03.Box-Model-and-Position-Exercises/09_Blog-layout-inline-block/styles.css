@@ -5,21 +5,28 @@ html
     color: rgb(51, 51, 51) ;
 }
 
+body{
+    padding: 2em;
+    max-width: 80em;
+}
+
+header{
+    margin: 2em 0;
+}
+
 img
 {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    width: 80%;
     height: auto;
-}
-body {
-    display: flex;
 }
 
 article {
-    flex: 1;
-    margin-right: 20px; /* Adjust the margin as needed */
+    display: inline-block;
+    width: 70%;
 }
 
 aside {
-    width: 200px; /* Adjust the width as needed */
+    width: 30%;
+    float: right;
 }
