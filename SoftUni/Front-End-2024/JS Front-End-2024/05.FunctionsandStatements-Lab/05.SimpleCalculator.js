@@ -1,18 +1,12 @@
-function solve(a, b, operator){
-    let operation = (a,b,operator) => {
-        switch (operator){
-            case 'multiply':
-                return a * b;
-            case 'divide':
-                return a / b;
-            case 'add':
-                return a + b;
-            case 'subtract':
-                return a - b;
-        }
-    }
+function solve(a, b, operator) {
+    var operations = {
+        multiply: (a, b) => a * b,
+        divide: (a, b) => a / b,
+        add: (a, b) => a + b,
+        subtract: (a, b) => a - b
+    };
 
-    console.log(operation(a,b,operator));
+    console.log(operations[operator](a, b));
 }
 
 solve(5,
